@@ -22,5 +22,10 @@
             return Math.Pow(x, exp);
         }
 
+        public double Divide(double a, double b)
+        {
+            return a / b;
+        }
+
     }
 }

@@ -42,6 +42,14 @@ namespace Test.Calculator.Class
 
         }
 
+        [Test]
+        public void TestDivide()
+        {
+            handCalculator uut = new handCalculator();
+            Assert.That(uut.Divide(a: 3, b: 3), Is.EqualTo(1.0));
+
+        }
+
         [TestCase(2, 3, 5)]
         [TestCase(6, 7, 13)]
         [TestCase(3, 3, 6)]
