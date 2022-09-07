@@ -13,7 +13,7 @@ namespace Test.Calculator.Class
         public void TestAdd()
         {
             handCalculator uut = new handCalculator();
-            //uut.Add(1, 4);
+            //uut.Add(1, 4);//værdifuld
             Assert.That(uut.Add(a:1, b:4),Is.EqualTo(5.0));
 
         }
