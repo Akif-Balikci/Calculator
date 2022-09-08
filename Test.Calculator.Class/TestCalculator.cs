@@ -49,6 +49,23 @@ namespace Test.Calculator.Class
             Assert.That(uut.Divide(a: 3, b: 3), Is.EqualTo(1.0));
 
         }
+        [Test]
+        public void TestSqrt()
+        {
+            handCalculator uut = new handCalculator();
+            Assert.That(uut.Sqrt(a: 3, b: 6), Is.EqualTo(3));
+
+        }
+
+
+        [Test]
+        public void TestPytagoras() 
+        {
+            handCalculator uut = new handCalculator();
+            Assert.That(uut.pytagoras(a: 3, b: 4), Is.EqualTo(5));
+        
+        }
+            
 
         [TestCase(2, 3, 5)]
         [TestCase(6, 7, 13)]
